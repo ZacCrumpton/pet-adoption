@@ -31,7 +31,31 @@ const dinosaurs = [
 ];
 console.log(dinosaurs);
 
+const cat = [
+    {
+        imageUrl: "",
+        name: "Coacoa",
+        color: "Midnight Blue",
+        specialSkill: "begging for treats",
+        type: "cat"
+    },
+    {
+        imageUrl: "",
+        name: "Spooky",
+        color: "black",
+        specialSkill: "pretending to love humans",
+        type: "cat"
+    },
+    {
+        imageUrl: "",
+        name: "Gary",
+        color: "white",
+        specialSkill: "being lazy",
+        type: "cat"
+    }
+]
 
+console.log(cat);
 
 // const dinoCard_1 = () => {
 //     let domString = '';
