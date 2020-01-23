@@ -75,13 +75,14 @@ const petCard = [
 // console.log(petCard);
 
 const buildPetCard = () => {
-    let domString = "";
+    let domString = '';
     for(let i = 0; i < petCard.length; i++){
         domString += `<div class="petCard">`;
         domString +=    `<h3>${petCard[i].type}</h3>`
         domString +=    `<p>Name: ${petCard[i].name}</p>`
         domString += `</div>`
     }
+    printToDom('pets', domString);
 };
 
 buildPetCard();
