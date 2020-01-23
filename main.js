@@ -6,7 +6,7 @@ const printToDom = (divId, textToPrint) => {
 };
 
 
-const dinosaurs = [
+const petCard = [
     {
         imageUrl: "",
         name: "Steven",
@@ -27,11 +27,7 @@ const dinosaurs = [
         color: "Black",
         specialSkill: "Eating fish",
         type: "dino"
-    }
-];
-console.log(dinosaurs);
-
-const cat = [
+    },
     {
         imageUrl: "",
         name: "Coacoa",
@@ -52,12 +48,7 @@ const cat = [
         color: "white",
         specialSkill: "being lazy",
         type: "cat"
-    }
-];
-
-console.log(cat);
-
-const dog = [
+    },
     {
         imageUrl: "",
         name: "Bolto",
@@ -81,7 +72,19 @@ const dog = [
     }
 ];
 
-console.log(dog)
+// console.log(petCard);
+
+const buildPetCard = () => {
+    let domString = "";
+    for(let i = 0; i < petCard.length; i++){
+        domString += `<div class="petCard">`;
+        domString +=    `<h3>${petCard[i].type}</h3>`
+        domString +=    `<p>Name: ${petCard[i].name}</p>`
+        domString += `</div>`
+    }
+};
+
+buildPetCard();
 
 // const dinoCard_1 = () => {
 //     let domString = '';
