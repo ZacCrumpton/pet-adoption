@@ -53,9 +53,35 @@ const cat = [
         specialSkill: "being lazy",
         type: "cat"
     }
-]
+];
 
 console.log(cat);
+
+const dog = [
+    {
+        imageUrl: "",
+        name: "Bolto",
+        color: "black/white",
+        specialSkill: "Sledding",
+        type: "dog"
+    },
+    {
+        imageUrl: "",
+        name: "Tico",
+        color: "Tan",
+        specialSkill: "cuddles",
+        type: "dog"
+    },
+    {
+        imageUrl: "",
+        name: "Zeus",
+        color: "brown",
+        specialSkill: "being goofy",
+        type: "dog"
+    }
+];
+
+console.log(dog)
 
 // const dinoCard_1 = () => {
 //     let domString = '';
