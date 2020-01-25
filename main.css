@@ -1,43 +1,170 @@
 body {
-    background-color: whitesmoke;
-    color: #191970;
-    display: flex;
+    background-color: lightseagreen;
+    
+    height: 100%;
+    margin: 0;
 }
 
 .cardContainer{
     display: flex;
     flex-direction: row;
-    margin: 15px 15px;
+    margin: 10px 10px;
+    min-height: 100%;
+    margin-bottom: -50px;
 }
 
 
 .petCard{
     display: flex;
-    flex-direction: row;
     margin: 15px 15px;
     flex-wrap: wrap;
-    padding: 14px 16px;
-    justify-content: flex-start;
+    justify-content: space-around;
+    padding: 20px;
+    padding-bottom: 50px;
 }
+
+img {
+    min-width: 250px;
+    max-height: 200px;
+    margin-bottom: -5px;
+    border: 2px solid goldenrod;
+    opacity: 0.5;
+}
+
+img:hover{
+    opacity: 1.0;
+}
+
 
 article{
     background-color: khaki;
-    width: 250px;
-    padding: 14px 16px;
+    width: 300px;
+    padding: 14px 5px;
     text-align: center;
-    align-content: center;
+    height: max-content;
+    margin-bottom: -50px;
+    display: flex;
+    flex-direction: column;
+    border-radius: 25px;
 }
     
 
 h2 {
-    background-color: orange;
-    padding: 20px 50px 20px 50px ;
-}
-p {
-    background-color: whitesmoke;
-    padding: 5px 50px 5px 50px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    margin-top: -14px;
+    margin-right: -5px;
+    margin-left: -5px;
+    border-radius: 25px 25px 0px 0px;
+    background-color: lightyellow;
 }
 
-img {
-    width: 200px;;
+footer.DINO {
+    background-color: lightgreen;
+    color:grey;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    margin-left: -5px;
+    margin-right: -5px;
+    margin-bottom: -14px;
+    border-radius: 0px 0px 25px 25px;
+}
+footer.CAT {
+    background-color:lightblue;
+    color: grey;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    margin-left: -5px;
+    margin-right: -5px;
+    margin-bottom: -14px;
+    border-radius: 0px 0px 25px 25px;
+    
+}
+footer.DOG {
+    background-color: orange;
+    color: grey;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    margin-left: -5px;
+    margin-right: -5px;
+    margin-bottom: -14px;
+    border-radius: 0px 0px 25px 25px;
+}
+section {
+    background-color: ;
+    padding: 20px 0px 20px 0px;
+    margin: 14px 16px;
+
+}
+
+hr {
+    border-top: 1px solid black;
+    width: 90%;
+}
+
+.whiteSpace {
+    background-color: whitesmoke;
+    margin-top: 20px;
+    margin-bottom: 20px;
+
+}
+
+header {
+    display: flex;
+    width: 100%;
+    max-height: max-content;
+    background-color: whitesmoke;
+}
+
+nav {
+    display: flex;
+    flex-direction: row-reverse;
+    align-content: flex-end;
+    width: 100%;
+    border-bottom: 1px solid lightslategray;
+
+}
+
+.dogBtn{
+    background-color: orange;
+    text-align: center;
+    padding: 20px 40px 20px 40px;
+    height: max-content;
+}
+
+.dogBtn:hover{
+    background-color: orangered;
+}
+
+.catBtn {
+    background-color: lightblue;
+    text-align: center;
+    padding: 20px 40px 20px 40px;
+    height: max-content;
+}
+
+.catBtn:hover{
+    background-color:royalblue;
+}
+
+.dinoBtn{
+    background-color: lightgreen;
+    text-align: center;
+    padding: 20px 40px 20px 40px;
+    height: max-content;
+}
+
+.dinoBtn:hover{
+    background-color: green;
+}
+
+.allBtn{
+    background-color: plum;
+    text-align: center;
+    padding: 20px 40px 20px 40px;
+    height: max-content;
+}
+
+.allBtn:hover{
+    background-color: purple;
 }
