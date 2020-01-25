@@ -6,7 +6,14 @@ const printToDom = (divId, textToPrint) => {
 };
 
 
-
+function hideDiv() {
+    var hide = document.getElementById("btn");
+    if (hide.style.display === "none") {
+      x.style.display = "block";
+    } else {
+      x.style.display = "none";
+    }
+  } 
 
 
 const petCard = [
@@ -75,7 +82,33 @@ const petCard = [
     }
 ];
 
+// const displayCard = (event) => {
+//     let domString = '';
+
+//     for(let i = 0; i < pets.length; i++){
+//         if (pets[i].type === event.target.id) {
+
+//             domString +=    `<div class="petCard">`;
+//             domString +=    `<article>`
+//             domString +=            `<h2 class="${petCard[i].name}">${petCard[i].name}</h2>`;
+//             domString +=            `<img src="${petCard[i].imageUrl}"></<img>`
+//             domString +=        `<div class="whiteSpace">`
+//             domString +=            `<section>Color: ${petCard[i].color}</section>`;
+//             domString +=            `<hr>`
+//             domString +=            `<section>Specialty: ${petCard[i].specialSkill}</section>`;
+//             domString +=        `</div>`
+//             domString +=    `<footer class="${petCard[i].type}">${petCard[i].type}</footer>`
+//             domString +=    `</article>`
+//             domString +=    `</div>`
+//         }
+//     }
+//     printToDom('pets', domString);
+// };
+
+
 // console.log(petCard);
+
+
 
 const buildPetCard = () => {
     let domString = '';
@@ -98,7 +131,37 @@ const buildPetCard = () => {
     printToDom('pets', domString);
 };
 
+const divFilter = (e) => {
+    let domString = '';
+    for(let i = 0; i < petCard.length; i++){
+        if(petCard[i].type === e.target.id){
+
+        domString +=    `<div class="petCard">`;
+        domString +=    `<article>`
+        domString +=            `<h2 class="${petCard[i].name}">${petCard[i].name}</h2>`;
+        domString +=            `<img src="${petCard[i].imageUrl}"></<img>`
+        domString +=        `<div class="whiteSpace">`
+        domString +=            `<section>Color: ${petCard[i].color}</section>`;
+        domString +=            `<hr>`
+        domString +=            `<section>Specialty: ${petCard[i].specialSkill}</section>`;
+        domString +=        `</div>`
+        domString +=    `<footer class="${petCard[i].type}">${petCard[i].type}</footer>`
+        domString +=    `</article>`
+        domString +=    `</div>`
+        }
+        
+    }
+    printToDom('pets', domString);
+}
+
+document.getElementById('allBtn').addEventListener('click', buildPetCard);
+document.getElementById('DOG').addEventListener('click', divFilter);
+document.getElementById('CAT').addEventListener('click', divFilter);
+document.getElementById('DINO').addEventListener('click', divFilter);
+
+
 buildPetCard();
+
 
 // const dinoCard_1 = () => {
 //     let domString = '';
