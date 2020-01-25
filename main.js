@@ -22,7 +22,7 @@ const petCard = [
         type: "dino"
     },
     {
-        imageUrl: "",
+        imageUrl: "https://images-na.ssl-images-amazon.com/images/I/61fqS2CZLgL._AC_SX522_.jpg",
         name: "Jim",
         color: "Black",
         specialSkill: "Eating fish",
@@ -77,10 +77,17 @@ const petCard = [
 const buildPetCard = () => {
     let domString = '';
     for(let i = 0; i < petCard.length; i++){
-        domString += `<div class="petCard">`;
-        domString +=    `<h3>${petCard[i].type}</h3>`
-        domString +=    `<p>Name: ${petCard[i].name}</p>`
-        domString += `</div>`
+        
+        domString +=    `<div class="petCard">`;
+        domString +=    `<article>`
+        domString +=            `<h2>${petCard[i].type}</h2>`;
+        domString +=            `<p><img src="${petCard[i].imageUrl}"></p>`
+        domString +=            `<p>Name: ${petCard[i].name}</p>`;
+        domString +=            `<p>Color: ${petCard[i].color}</p>`;
+        domString +=            `<p>Specialty: ${petCard[i].specialSkill}</p>`;
+        domString +=    `</article>`
+        domString +=    `</div>`
+        
     }
     printToDom('pets', domString);
 };
