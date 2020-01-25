@@ -1,4 +1,43 @@
 body {
     background-color: whitesmoke;
-    color: midnightblue;
+    color: #191970;
+    display: flex;
+}
+
+.cardContainer{
+    display: flex;
+    flex-direction: row;
+    margin: 15px 15px;
+}
+
+
+.petCard{
+    display: flex;
+    flex-direction: row;
+    margin: 15px 15px;
+    flex-wrap: wrap;
+    padding: 14px 16px;
+    justify-content: flex-start;
+}
+
+article{
+    background-color: khaki;
+    width: 250px;
+    padding: 14px 16px;
+    text-align: center;
+    align-content: center;
+}
+    
+
+h2 {
+    background-color: orange;
+    padding: 20px 50px 20px 50px ;
+}
+p {
+    background-color: whitesmoke;
+    padding: 5px 50px 5px 50px;
+}
+
+img {
+    width: 200px;;
 }
