@@ -60,7 +60,7 @@ h2 {
 }
 
 footer.DINO {
-    background-color: lightgreen;
+    background-color: orange;
     color:grey;
     padding-top: 15px;
     padding-bottom: 15px;
@@ -81,7 +81,7 @@ footer.CAT {
     
 }
 footer.DOG {
-    background-color: orange;
+    background-color: lightgreen;
     color: grey;
     padding-top: 15px;
     padding-bottom: 15px;
@@ -125,14 +125,14 @@ nav {
 }
 
 .dogBtn{
-    background-color: orange;
+    background-color: lightgreen;
     text-align: center;
     padding: 20px 40px 20px 40px;
     height: max-content;
 }
 
 .dogBtn:hover{
-    background-color: orangered;
+    background-color: green;
 }
 
 .catBtn {
@@ -147,14 +147,14 @@ nav {
 }
 
 .dinoBtn{
-    background-color: lightgreen;
+    background-color: orange;
     text-align: center;
     padding: 20px 40px 20px 40px;
     height: max-content;
 }
 
 .dinoBtn:hover{
-    background-color: green;
+    background-color: orangered;
 }
 
 .allBtn{
