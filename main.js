@@ -82,33 +82,6 @@ const petCard = [
     }
 ];
 
-// const displayCard = (event) => {
-//     let domString = '';
-
-//     for(let i = 0; i < pets.length; i++){
-//         if (pets[i].type === event.target.id) {
-
-//             domString +=    `<div class="petCard">`;
-//             domString +=    `<article>`
-//             domString +=            `<h2 class="${petCard[i].name}">${petCard[i].name}</h2>`;
-//             domString +=            `<img src="${petCard[i].imageUrl}"></<img>`
-//             domString +=        `<div class="whiteSpace">`
-//             domString +=            `<section>Color: ${petCard[i].color}</section>`;
-//             domString +=            `<hr>`
-//             domString +=            `<section>Specialty: ${petCard[i].specialSkill}</section>`;
-//             domString +=        `</div>`
-//             domString +=    `<footer class="${petCard[i].type}">${petCard[i].type}</footer>`
-//             domString +=    `</article>`
-//             domString +=    `</div>`
-//         }
-//     }
-//     printToDom('pets', domString);
-// };
-
-
-// console.log(petCard);
-
-
 
 const buildPetCard = () => {
     let domString = '';
@@ -161,11 +134,3 @@ document.getElementById('DINO').addEventListener('click', divFilter);
 
 
 buildPetCard();
-
-
-// const dinoCard_1 = () => {
-//     let domString = '';
-//     for(let i = 0; i < dinosaurs.length; i++) {
-//         console.log()
-//     }
-// }
